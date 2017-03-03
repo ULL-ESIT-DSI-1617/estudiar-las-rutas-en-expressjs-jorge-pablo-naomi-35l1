@@ -65,3 +65,12 @@ app.get('/ejemplo/b', [f0, f1, f2]);
 app.get('/users/:userId/books/:bookId', function (req, res) {
   res.send(req.params);
 });
+
+app.route('/libro')
+  .get(function (req, res) {
+    res.send('Metodo GET de un libro');
+  })
+  .post(function (req, res) {
+    res.send('Metodo POST de un libro');
+  })
+  

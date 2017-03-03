@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/ULL-ESIT-DSI-1617/estudiar-las-rutas-en-expressjs-jorge-pablo-naomi-35l1#readme",
   "dependencies": {
+    "body-parser": "^1.17.0",
+    "express": "^4.15.0",
     "gulp": "^3.9.1",
     "gulp-shell": "^0.6.1"
   }

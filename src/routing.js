@@ -3,10 +3,10 @@ var app = express();
 var path = require('path');
 
 
-app.set('views', __dirname + 'views');
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.use(express.static(__dirname + '/public/'));
+app.use(express.static('public'));
 
 var server = app.listen(8080, function () {
 
@@ -18,4 +18,8 @@ var server = app.listen(8080, function () {
 
 app.get('/', function (req, res) {
     res.render('index');
+});
+
+app.get('/prueba/p', function (req, res) {
+    res.send('Got a GET REQUEST');
 });

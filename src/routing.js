@@ -33,3 +33,6 @@ app.all('/secreto',function(req,res){
    res.send('Has accedido  un lugar que no deberías conocer.');
 });
 
+app.get('/in+fo?',function(req,res){
+    res.send('La cadena coincide con la expresión regular: /in+fo?');
+});

@@ -27,3 +27,9 @@ app.get('/prueba/p', function (req, res) {
 app.post('/form/post', function (req, res) {
     res.send('Got a POST REQUEST');
 });
+
+app.all('/secreto',function(req,res){
+   console.log("Se ha accedido a la zona secreta.");
+   res.send('Has accedido  un lugar que no deberías conocer.');
+});
+

@@ -60,3 +60,8 @@ var f2 = function (req, res) {
 };
 
 app.get('/ejemplo/b', [f0, f1, f2]);
+
+
+app.get('/users/:userId/books/:bookId', function (req, res) {
+  res.send(req.params);
+});

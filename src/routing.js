@@ -23,3 +23,7 @@ app.get('/', function (req, res) {
 app.get('/prueba/p', function (req, res) {
     res.send('Got a GET REQUEST');
 });
+
+app.post('/form/post', function (req, res) {
+    res.send('Got a POST REQUEST');
+});
